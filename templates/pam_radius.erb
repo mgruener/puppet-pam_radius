@@ -1,6 +1,6 @@
 #server[:port]	shared_secret	timeout (s)
 <% if @servers -%>
 <% Array(@servers).each do |server| -%>
-<%= server[:host] -%>	<%= server[:secret] -%>	<%= server[:timeout] ? server[:timeout] : '' %>
+<%= server['host'] -%>	<%= server['secret'] -%>	<%= server['timeout'] ? server['timeout'] : '' %>
 <% end -%>
 <%end -%>
